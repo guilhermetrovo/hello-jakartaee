@@ -1,5 +1,13 @@
+# IDE files
+.settings/
+.classpath
+.project
+
 # Compiled class file
 *.class
+
+# Build folder
+target/
 
 # Log file
 *.log
