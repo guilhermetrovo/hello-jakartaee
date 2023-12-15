@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns="http://jboss.org/schema/arquillian" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://jboss.org/schema/arquillian
+    http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+    <!-- Force the use of the Servlet 5.0 protocol with all containers - it is the only supported version in this Wildfly/Arquillian version -->
+    <defaultProtocol type="Servlet 5.0" />
+
+    <!--
+    	Uncomment to have test archives exported to the file system by Arquillian for inspection.
+    	Alternatively, modify the caller to our custom ArquillianDeploymentBuilder to send a File.
+    -->
+    <!--
+    <engine>
+        <property name="deploymentExportPath">target/</property>
+    </engine>
+    -->
+
+	<!--
+		Configuration for a MANAGED container, which is started/stopped automatically by Arquillian.
+		This links to the "arq-managed" Maven profile defined in pom.xml
+	-->
+    <container qualifier="managed">
+        <!--
+			By default, Arquillian will use the JBOSS_HOME environment variable to find the WildFly / JBoss EAP installation.
+            If you prefer not to define the JBOSS_HOME environment variable, set the following `jbossHome` property 
+            with the path to the WildFly / JBoss EAP installation.
+		-->
+        <configuration>
+            <property name="jbossHome">D:\Dev\Wildfly\wildfly-30.0.0.Final</property>
+        </configuration>
+    </container>
+    
+    <!--
+    	Configuration for a remote WildFly / JBoss EAP instance, where Arquillian will make the deployments and execute the tests
+    	This links to the "arq-remote" Maven profile defined in pom.xml
+    -->
+    <container qualifier="remote">
+        <configuration>
+            <property name="managementAddress">127.0.0.1</property>
+            <property name="managementPort">9990</property>
+            <!-- Set these for Arquillian to be able to connect and perform the deployments -->
+            <!--
+            <property name="username">admin</property>
+            <property name="password">admin</property>
+            -->
+        </configuration>
+    </container>
+</arquillian>
