@@ -15,7 +15,8 @@ Currently there's a single `text/plain` implementation of these endpoints.
 ***
 
 # Testing
-## Running with Maven locally
+## Maven
+### Local Wildfly
 ```
 mvn clean install verify -Parq-managed
 ```
@@ -30,7 +31,7 @@ This will:
 8. Undeploy the application from Wildfly
 9. Stop Wildfly
 
-## Running with Maven remote
+### Remote Wildfly
 ```
 mvn clean install verify -Parq-remote
 ```
