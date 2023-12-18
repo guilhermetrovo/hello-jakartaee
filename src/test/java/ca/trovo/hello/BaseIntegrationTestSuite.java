@@ -1,4 +1,4 @@
-package ca.trovo.hello.test;
+package ca.trovo.hello;
 
 import java.io.File;
 import java.util.Collection;

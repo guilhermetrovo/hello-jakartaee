@@ -1,4 +1,4 @@
-package ca.trovo.hello.test;
+package ca.trovo.hello;
 
 import java.net.URL;
 import java.util.logging.Level;

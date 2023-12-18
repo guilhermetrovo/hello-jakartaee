@@ -1,9 +1,8 @@
-package ca.trovo.utils.test;
+package ca.trovo.utils;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import ca.trovo.utils.HttpUtils;
 
 /**
  * Unit Test class for {@link HttpUtils}.

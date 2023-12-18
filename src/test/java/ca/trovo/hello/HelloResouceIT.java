@@ -1,4 +1,4 @@
-package ca.trovo.hello.test;
+package ca.trovo.hello;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -10,7 +10,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import ca.trovo.hello.HelloResource;
 import ca.trovo.utils.HttpUtils;
 import jakarta.ws.rs.core.Response;
 
