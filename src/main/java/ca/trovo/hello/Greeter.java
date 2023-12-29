@@ -1,8 +1,20 @@
 package ca.trovo.hello;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+
 /**
  * Represents a greeter, one who greets someone else. The host (person) acting and creating {@link Greeting}.
+ * <p>
+ * Serializes with the implementation class information on it (using {@code Jackson}). For example:
+ * <code>{
+ *     "greeter":{"@class":"ca.trovo.hello.greeter.SimpleGreeter"}
+ * }</code>
  */
+@JsonTypeInfo(
+	use = JsonTypeInfo.Id.CLASS,
+	include = JsonTypeInfo.As.PROPERTY
+)
 public interface Greeter {
 
 	/**
