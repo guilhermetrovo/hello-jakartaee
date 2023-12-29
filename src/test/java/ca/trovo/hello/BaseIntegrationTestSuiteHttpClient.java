@@ -5,6 +5,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.jboss.arquillian.test.api.ArquillianResource;
+import org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider;
 import org.junit.After;
 import org.junit.Before;
 
@@ -53,7 +54,11 @@ abstract class BaseIntegrationTestSuiteHttpClient extends BaseIntegrationTestSui
 	@Before
 	public void beforeEach() {
 		LOGGER.log(Level.FINER, "Building HTTP client.");
-		this.client = ClientBuilder.newBuilder().build();
+		this.client = ClientBuilder.newBuilder()
+				.register(ResteasyJackson2Provider.class, 100)
+				.property("resteasy.preferJacksonOverJsonB", "true")
+				//.register(JacksonJsonProvider.class)
+				.build();
 	}
 
 	@After
