@@ -1,8 +1,11 @@
-package ca.trovo.hello.greeter;
+package ca.trovo.greetings;
 
 import java.util.Objects;
 
-import ca.trovo.hello.Greeter;
+import ca.trovo.greetings.greeter.ClockGreeter;
+import ca.trovo.greetings.greeter.GreeterNotFoundException;
+import ca.trovo.greetings.greeter.SimpleGreeter;
+import ca.trovo.greetings.greeter.SlangGreeter;
 import jakarta.enterprise.context.ApplicationScoped;
 
 

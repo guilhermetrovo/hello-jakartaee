@@ -1,18 +1,18 @@
-package ca.trovo.hello.greeter;
+package ca.trovo.greetings.greeter;
 
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 
-import ca.trovo.hello.Greeter;
-import ca.trovo.hello.Greeting;
+import ca.trovo.greetings.Greeter;
+import ca.trovo.greetings.Greeting;
 
 
 /**
  * A {@link Greeter} based on the current time of the day.
  */
-final class ClockGreeter extends ThresholdGreeter<Integer> {
+public final class ClockGreeter extends ThresholdGreeter<Integer> {
 
 	/**
 	 * The default map to use for this greeter.

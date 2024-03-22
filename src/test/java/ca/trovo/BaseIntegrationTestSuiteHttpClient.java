@@ -1,4 +1,4 @@
-package ca.trovo.hello;
+package ca.trovo;
 
 import java.net.URL;
 import java.util.logging.Level;
@@ -25,7 +25,7 @@ import jakarta.ws.rs.client.ClientBuilder;
  * @see #client
  *
  */
-abstract class BaseIntegrationTestSuiteHttpClient extends BaseIntegrationTestSuite {
+public abstract class BaseIntegrationTestSuiteHttpClient extends BaseIntegrationTestSuite {
 
 	/** The logger for this class. */
 	private static final Logger LOGGER = Logger.getLogger(BaseIntegrationTestSuiteHttpClient.class.getName());

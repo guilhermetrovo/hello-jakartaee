@@ -1,6 +1,9 @@
-package ca.trovo.hello;
+package ca.trovo.greetings.rs;
 
-import ca.trovo.hello.greeter.GreeterNotFoundException;
+import ca.trovo.JaxRsActivator;
+import ca.trovo.greetings.Greeter;
+import ca.trovo.greetings.Greeting;
+import ca.trovo.greetings.greeter.GreeterNotFoundException;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;

@@ -1,4 +1,4 @@
-package ca.trovo.hello;
+package ca.trovo.greetings;
 
 import org.junit.Assert;
 

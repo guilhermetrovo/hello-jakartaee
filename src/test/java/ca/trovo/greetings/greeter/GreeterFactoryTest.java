@@ -1,4 +1,4 @@
-package ca.trovo.hello.greeter;
+package ca.trovo.greetings.greeter;
 
 import java.util.List;
 import java.util.logging.Level;
@@ -7,7 +7,8 @@ import java.util.logging.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 
-import ca.trovo.hello.Greeter;
+import ca.trovo.greetings.Greeter;
+import ca.trovo.greetings.GreeterFactory;
 
 
 /**

@@ -1,10 +1,12 @@
-package ca.trovo.hello;
+package ca.trovo.greetings.rs;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import ca.trovo.hello.greeter.GreeterFactory;
-import ca.trovo.hello.greeter.GreeterNotFoundException;
+import ca.trovo.greetings.Greeter;
+import ca.trovo.greetings.GreeterFactory;
+import ca.trovo.greetings.Greeting;
+import ca.trovo.greetings.greeter.GreeterNotFoundException;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Path;
 

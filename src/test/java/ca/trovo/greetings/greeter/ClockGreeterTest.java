@@ -1,4 +1,4 @@
-package ca.trovo.hello.greeter;
+package ca.trovo.greetings.greeter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -10,9 +10,9 @@ import java.util.logging.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 
-import ca.trovo.hello.Greeter;
-import ca.trovo.hello.Greeting;
-import ca.trovo.hello.GreetingTestHelper;
+import ca.trovo.greetings.Greeter;
+import ca.trovo.greetings.Greeting;
+import ca.trovo.greetings.GreetingTestHelper;
 
 
 /**

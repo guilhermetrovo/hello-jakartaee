@@ -1,8 +1,8 @@
-package ca.trovo.hello.greeter;
+package ca.trovo.greetings.greeter;
 
 import java.io.Serial;
 
-import ca.trovo.hello.Greeter;
+import ca.trovo.greetings.Greeter;
 
 
 /**

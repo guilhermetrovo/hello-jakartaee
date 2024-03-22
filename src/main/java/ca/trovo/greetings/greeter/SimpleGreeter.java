@@ -1,18 +1,18 @@
-package ca.trovo.hello.greeter;
+package ca.trovo.greetings.greeter;
 
 import java.util.List;
 import java.util.Random;
 
-import ca.trovo.hello.Greeter;
+import ca.trovo.greetings.Greeter;
 
 
 /**
- * A simple {@link Greeter} that uses a short and pre-defined set of slang responses.
+ * A simple {@link Greeter} that uses a short and pre-defined set of responses.
  *
  * @see #GREETINGS
  *
  */
-final class SlangGreeter extends RandomListGreeter {
+public final class SimpleGreeter extends RandomListGreeter {
 
 	/**
 	 * The short and pre-defined set of responses.
@@ -21,19 +21,18 @@ final class SlangGreeter extends RandomListGreeter {
 	 * to replace with {@code greetee}'s value.
 	 */
 	private static final List<String> GREETINGS = List.of(
-		"Yo %s!",
-		"Yo %s, ma'man!",
-		"Hail %s",
-		"'Sup %s",
-		"Whatsuuuuup bro %s",
-		"%s boss in tha haussss!"
+		"Hello %s",
+		"Hi %s",
+		"Hey %s",
+		"*eye contact and smile at* %s",
+		"How are you %s?"
 	);
 
 
 	/**
 	 * Default constructor.
 	 */
-	public SlangGreeter() {
+	public SimpleGreeter() {
 		super(GREETINGS);
 	}
 
@@ -46,7 +45,7 @@ final class SlangGreeter extends RandomListGreeter {
 	 * @see Random#nextInt(int)
 	 *
 	 */
-	public SlangGreeter(Random random) {
+	public SimpleGreeter(Random random) {
 		super(GREETINGS, random);
 	}
 

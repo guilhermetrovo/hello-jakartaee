@@ -1,4 +1,4 @@
-package ca.trovo.hello;
+package ca.trovo.greetings.rs;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -10,6 +10,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import ca.trovo.BaseIntegrationTestSuiteHttpClient;
+import ca.trovo.greetings.Greeting;
+import ca.trovo.greetings.GreetingTestHelper;
 import ca.trovo.utils.HttpUtils;
 import ca.trovo.utils.JacksonUtils;
 import jakarta.ws.rs.core.MediaType;

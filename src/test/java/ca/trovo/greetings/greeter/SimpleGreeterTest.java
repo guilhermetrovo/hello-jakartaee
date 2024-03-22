@@ -1,4 +1,4 @@
-package ca.trovo.hello.greeter;
+package ca.trovo.greetings.greeter;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,22 +6,22 @@ import java.util.Set;
 import org.junit.Assert;
 import org.junit.Test;
 
-import ca.trovo.hello.Greeter;
-import ca.trovo.hello.Greeting;
-import ca.trovo.hello.GreetingTestHelper;
+import ca.trovo.greetings.Greeter;
+import ca.trovo.greetings.Greeting;
+import ca.trovo.greetings.GreetingTestHelper;
 
 /**
- * Unit Test class for {@link SlangGreeter}.
+ * Unit Test class for {@link SimpleGreeter}.
  */
-public class SlangGreeterTest {
+public class SimpleGreeterTest {
 
 	/**
-	 * Tests that {@link SlangGreeter#greet(String)} returns a valid {@link Greeting},
+	 * Tests that {@link SimpleGreeter#greet(String)} returns a valid {@link Greeting},
 	 * and that the {@code greeting} contains the {@code greetee} value in it.
 	 */
 	@Test
 	public void shouldHaveNameInGreeting() {
-		Greeter greeter = new SlangGreeter();
+		Greeter greeter = new SimpleGreeter();
 		String greetee = "John";
 
 		Greeting greeting = greeter.greet(greetee);
@@ -33,7 +33,7 @@ public class SlangGreeterTest {
 	}
 
 	/**
-	 * Tests that {@link SlangGreeter#greet(String)} should return a minimum number of different greetings.
+	 * Tests that {@link SimpleGreeter#greet(String)} should return a minimum number of different greetings.
 	 */
 	@Test
 	public void shouldMeetGreetingVarietyMinimum() {
@@ -41,7 +41,7 @@ public class SlangGreeterTest {
 		int maxNumberOfGreetings = 50;
 		Set<Greeting> uniqueGreetings = HashSet.newHashSet(maxNumberOfGreetings);
 
-		Greeter greeter = new SlangGreeter();
+		Greeter greeter = new SimpleGreeter();
 		String greetee = "John";
 
 		for (int i=0; i < maxNumberOfGreetings; i++) {

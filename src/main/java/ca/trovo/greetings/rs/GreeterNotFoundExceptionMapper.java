@@ -1,6 +1,6 @@
-package ca.trovo.hello;
+package ca.trovo.greetings.rs;
 
-import ca.trovo.hello.greeter.GreeterNotFoundException;
+import ca.trovo.greetings.greeter.GreeterNotFoundException;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.ExceptionMapper;
 import jakarta.ws.rs.ext.Provider;

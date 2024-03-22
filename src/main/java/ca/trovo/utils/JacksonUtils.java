@@ -15,6 +15,9 @@ public class JacksonUtils {
 	/** The logger for this class. */
 	private static final Logger LOGGER = Logger.getLogger(JacksonUtils.class.getName());
 
+	/** Cached empty {@code JSON}. */
+	private static final String EMPTY_JSON = "{}";
+
 
 	/** The {@code Jackson} mapper to use when serializing and deserializing objects. */
 	private ObjectMapper mapper;
@@ -47,7 +50,7 @@ public class JacksonUtils {
 
 
 	/** A singleton instance that uses default dependencies, lazily initialized. */
-	private static JacksonUtils INSTANCE;
+	private static volatile JacksonUtils INSTANCE;
 
 	/**
 	 * Entry-point method of this class with default configuration.
@@ -87,12 +90,13 @@ public class JacksonUtils {
 	 *
 	 */
 	public String serialize(Object object) {
-		String json = "{}";
+		String json;
 
 		try {
 			json = this.mapper.writeValueAsString(object);
 		} catch (JsonProcessingException ex) {
 			LOGGER.log(Level.SEVERE, ex.getMessage(), ex);
+			json = EMPTY_JSON;
 		}
 
 		return json;
@@ -119,9 +123,8 @@ public class JacksonUtils {
 			return obj;
 		} catch (JsonProcessingException ex) {
 			LOGGER.log(Level.SEVERE, ex.getMessage(), ex);
+			return null;
 		}
-
-		return null;
 	}
 
 }
