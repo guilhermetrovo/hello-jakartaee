@@ -1,5 +1,6 @@
 package ca.trovo.hello;
 
+import ca.trovo.JaxRsActivator;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;

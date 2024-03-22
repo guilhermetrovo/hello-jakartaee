@@ -1,4 +1,4 @@
-package ca.trovo.hello;
+package ca.trovo;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

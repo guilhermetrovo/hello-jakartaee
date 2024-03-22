@@ -7,7 +7,7 @@
    bean-discovery-mode="annotated">
 
 	<!--
-		This descriptor configures Context and Dependeny Injection.
+		This descriptor configures Context and Dependency Injection.
 		Actually, CDI 1.1 does not require this file. But we have it anyway to avoid deployment errors for blank projects (see WFLY-13306)
 	-->
 
