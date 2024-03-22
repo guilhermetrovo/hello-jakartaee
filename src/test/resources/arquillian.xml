@@ -27,7 +27,7 @@
             with the path to the WildFly / JBoss EAP installation.
 		-->
         <configuration>
-            <property name="jbossHome">D:\Dev\Wildfly\wildfly-30.0.0.Final</property>
+            <property name="jbossHome">D:\Dev\Wildfly\wildfly-31.0.1.Final</property>
         </configuration>
     </container>
     
