@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ca.trovo</groupId>
     <artifactId>hello-jakartaee</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
 
     <packaging>war</packaging>
     <name>hello-jakartaee</name>
@@ -19,10 +19,10 @@
 
         <!--
             Define the version of the JBoss BOMs we want to import to specify tested stacks.
-            https://central.sonatype.com/artifact/org.wildfly.bom/wildfly-ee-with-tools/30.0.0.Final/overview
+            https://central.sonatype.com/artifact/org.wildfly.bom/wildfly-ee-with-tools/31.0.1.Final/overview
             This uses Jakarta EE 10.
         -->
-        <version.wildfly.bom>30.0.0.Final</version.wildfly.bom>
+        <version.wildfly.bom>31.0.1.Final</version.wildfly.bom>
 
         <!-- other plugin versions -->
         <version.compiler.plugin>3.9.0</version.compiler.plugin>
