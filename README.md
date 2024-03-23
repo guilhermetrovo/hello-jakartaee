@@ -2,7 +2,7 @@
 Over engineered "Hello World" application that uses:
 * Java 21
 * Jakarta EE 10
-* Wildfly 30
+* Wildfly 31
 * Arquillian and jUnit 4
 
 The application is a simple hello world / echo HTTP endpoint, which context root deployed to `Wildfly` is by default at <http://localhost:8080/hello-jakartaee>.
